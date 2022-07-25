@@ -370,7 +370,9 @@ transform: scale(1.2) ;
   align-items: center;
   justify-content: center;
 }
-
+.form-subscribe{
+    width:100%;
+          }
 .div-products{
   width: 50%;
   text-align: center;
