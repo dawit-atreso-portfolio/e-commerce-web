@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="style.css">
+        <script src="whole.js" defer></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+        </head>
+    <body>
+      <div class="section-1" id="section-1">
+        <nav class="navbar">
+            <div class="brand-title"> <a class="brand-title" href="#">HelloThere</a></div>
+            <div class="background-toggle"><a href="#" class="toggle-button">
+                <span class="bar-1"></span>
+                <span class="bar"></span>
+                <span class="bar-3"></span>
+                    </a>
+                </div>
+            <div class="navbar-links">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+    <li><a href="Shop.html">Shop</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="FAQ.html">FAQ</a></li>
+    <li><a href="Store Policies.html">Store Policies</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="New Collection.html">New Collection</a></li>
+    <li><a href="More.html">More</a></li>
+    <li class="tick"><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+    <li class="tick"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+    <li class="tick"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    <li class="tick" ><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                   </ul>
+            </div>
+        </nav>
+        </div>
+
+
+        <div class="container-contact-form">
+            <form onsubmit="sendEmail();reset(); return false;" class="contact-form">
+                <h3>GET IN TOUCH </h3>
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="text" id="email" placeholder="Email " required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+               <textarea id="message" rows="4" placeholder=" Message here "></textarea>
+               <button type="submit">Send</button>
+            </form>
+                    </div>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+            
+                function sendEmail(){
+                    Email.send({
+                Host : "smtp.gmail.com",
+                Username : "voiceetnews@gmail.com",
+                Password : "dezmend121314151617181910",
+                To : 'voiceetnews@gmail.com',
+                From : "document.getElementById("email").value,
+                Subject : "New Contact Form voiceETnews",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+                }
+            </script>
+
+
+
+<footer>
+    <div class="footer-1">
+        
+     <div class="div-form">     <form class= "form-subscribe">
+          
+              <h2>Subscribe Form</h2>
+          
+            <div class="container-email" >
+              <input type="text" placeholder="Email address" name="mail" required>
+            </div>
+          
+            <div class="container-submit">
+              <input type="submit" value="Submit">
+            </div>
+          </form></div>
+
+    <div class="social-footer-1">
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </div>
+        <p class="copyright">&copy 2022. All right reserved</p>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>

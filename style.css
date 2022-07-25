@@ -1,0 +1,455 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.navbar{
+ 
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  width: 100%;
+  height: 80px;
+
+border: 1px rgba(74, 47, 164, 0.425) solid;
+  
+ 
+}
+
+.brand-title{
+  position: relative;
+  left: 10px;
+  font-size: 1.5rem;
+  font-style: var(10px);
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+ margin: .5rem;
+
+}
+.navbar-links ul{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ margin-right: 45px;
+ 
+}
+
+.navbar-links li{
+  list-style: none;
+  
+}
+
+.navbar-links li a{
+  color: rgb(255, 255, 255);
+  font-size:15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  text-transform:capitalize;
+  padding: .5rem;
+  
+  border-radius: 45px;
+  text-decoration: none;
+  display: block;
+}
+.navbar-links a:hover{
+      transition: .5s;
+      color: rgb(255, 241, 88);
+   
+  
+      
+  }
+  .toggle-button{
+      position: absolute;
+      top:12px;
+      right: 4%;
+      display: none;
+      flex-direction:column;
+      justify-content: space-between;
+      width:30px;
+      height:21px;
+  }
+  .toggle-button .bar{
+      height: 2px;
+      width:100%;
+      background-color: rgb(255, 255, 255);
+      border-radius:10px;
+  
+  }
+  .toggle-button .bar-1{
+    height: 2px;
+    width:75%;
+    margin-left: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+
+}
+.toggle-button .bar-3{
+  height: 2px;
+  width:90%;
+  margin-left: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius:10px;
+
+}
+
+  .d-cv{
+      border-radius: 45px;
+      background-color: #303a6d;
+  }
+  a{
+      text-decoration: none;
+  }
+
+  @media (max-width: 800px) { 
+ 
+  .brand-title{
+      position: relative;
+      margin-right: auto;
+      left: 0px;
+  }
+
+      .toggle-button {
+          display: flex;
+      }
+     .tick{
+      display: none;
+     }
+      .background-toggle{
+          display: flex;
+      }
+      .navbar-links {
+       display: none;
+      }
+      .navbar {
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 0;
+          width: 100%;
+          margin-top: 0px;
+          margin-left: 0;
+      }
+     .navbar-links ul {
+         width: 100%;
+         flex-direction: column;
+         margin-top: 20px;
+         margin-bottom: 15px;
+         margin-right: 0px;
+        
+         
+         
+     }
+     .navbar-links ul li{
+         text-align: center ; 
+        
+     }
+     .navbar-links li a {
+         padding: .5rem 1rem;
+     }
+     .navbar-links.active {
+         display: flex;
+     }
+  }
+.number-0-bag{
+    position: relative;
+    bottom: 35px;
+    left: 20px;
+}
+
+.bady{
+    height: 100vh;
+    background-image: url(img/white\ t\ shirt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bady-2{
+    background-color: rgb(19, 19, 19);
+}
+.footer-1 .copyright{
+text-align: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 70px;
+}
+.social-footer-1{
+text-align: center;
+margin-top: 230px;
+position: relative;
+top: 50px;
+}
+
+.social-footer-1 li{
+    display: inline-block;
+    padding:0 5px;
+    list-style: none;}
+
+.social-footer-1 a{
+    text-align: center;
+    display: inline-block;
+color: white;
+text-decoration: none;
+padding-left: 10px;
+font-size: 14.5px;
+}
+.bady-3{ 
+    text-align: center;
+    width: 100%;
+}
+.video-advert-1{  
+   width: 850px;
+   
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.button-shop-div{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.button-shop{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  
+  margin-bottom: 0;
+    width: 90px;
+    height: 35px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+}
+.button-shop:hover{background-color: rgb(148, 148, 148);cursor: pointer;}
+.footer-1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(19, 19, 19);
+}
+.form-subscribe{
+      position: relative;  
+      top: 100px;         
+    font-family: Arial;
+    width: 600px;
+    color: #f1f1f1;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+.div-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+   input[type=submit] {
+    width: 250px;
+    padding: 12px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .form-subscribe h2 {
+    color: white;
+    text-align: center;
+  }
+  input[type=text]{
+ 
+width: 250px;
+padding: 12px;
+margin: 5px 0;
+background-color: rgb(19, 19, 19);
+display: inline-block;
+border: 1.5px solid #ccc;
+box-sizing: border-box;
+color: white;
+}
+  input[type=submit] {
+    background-color: #dadada;
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  .bady-4{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 20px;
+  text-align: center;
+   justify-content: center;
+align-items: center;
+  }
+  .products-home{
+    width:100%;
+  }
+ .div-products h3,h4 {
+    color: white;
+    padding-top: 10px;
+ }
+
+.products-home:hover{
+transform: scale(1.2) ;
+ }
+
+  .products-page{
+    width: 35%;
+   
+    }
+    .div-products-page{
+      margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+    }
+    .div-products-page a{
+        text-decoration: none;
+        color: black;
+    }
+   
+    .add-to-cart:hover{
+        background-color: rgb(255, 199, 164);
+       
+    }
+    .add-to-cart{
+        margin-top: 10px;
+        width: 150px;
+        height: 35px;
+       font-weight: bold;
+    }
+    .woocommerce-variation-add-to-cart {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 150px;
+        gap: 20px;
+      }
+      
+      .qib-container {
+        display: flex;
+      }
+      
+      input.qty {
+        width: 40px;
+        height: 35px;
+      }
+      .qib-button{
+        width: 20px;
+      }
+      .single_add_to_cart_button{
+        width: 150px;
+        height: 35px;
+        background-color: rgb(86, 47, 0);
+        color: white;
+        border: 1px solid rgb(85, 0, 0);
+        border-radius: 20px;
+      }
+
+      @media (max-width: 800px){
+
+.bady-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-products{
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+.video-advert-1{
+  width: 100%;
+}
+.footer-1{
+   text-align: center;
+   
+  }
+  .button-shop{
+    justify-content: center;
+        align-items: center;
+        text-align: center;
+  }
+  .container-contact-form{
+    width: 100%;
+    
+}
+.contact-form{
+    width: 100%;
+   
+}
+.contact-form input,.contact-form textarea{
+  width: 100%;
+}
+}
+.container-contact-form{
+  width: 100%;
+  height: 150vh;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form{
+ 
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.contact-form h3{
+  color: rgb(235, 235, 235);
+  font-weight:500 ;
+  margin-bottom: 20px;
+}
+.contact-form input,.contact-form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #363636 ;
+  font-size: 16px;
+
+}
+.contact-form button{
+  padding: 15px;
+  background: #e7e7e7;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 110px;
+  margin: 20px auto 0;
+  border-radius: 10px ;
+}
+.contact-form button:hover{
+  background-color: rgb(51, 23, 23);
+  color: white;
+}
