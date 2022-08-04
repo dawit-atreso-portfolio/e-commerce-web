@@ -575,9 +575,10 @@ width: 150px ;
   color: #b3b3b3;
 }
 div.scrollmenu {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(48, 47, 47);
   overflow: auto;
   white-space: nowrap;
+
 }
 
 div.scrollmenu a {
@@ -586,9 +587,12 @@ div.scrollmenu a {
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  border: 1px solid #f4f4f4;
+  border-radius: 50px;
 }
 
 div.scrollmenu a:hover {
+  transform: scale(1.02);
   background-color: rgb(49, 49, 49);
 }
 .elec-button{
